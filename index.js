@@ -1,5 +1,8 @@
 let express = require("express");
+let cors =  require("cors");
 let app = express();
+
+app.use(cors());
 
 let ChapterModel = require("./models/Chapter");
 let mongoose = require("mongoose");
