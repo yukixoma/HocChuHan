@@ -16,4 +16,8 @@ app.get("*", (req, res) => {
     })
 })
 
+app.get("/", (req,res)=>{
+    res.send("Hello");
+})
+
 app.listen(process.env.PORT || 5000);
