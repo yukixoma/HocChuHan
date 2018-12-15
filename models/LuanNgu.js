@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
-let ChapterSchema = new Schema({
+let LuanNguSchema = new Schema({
     Chapter: Number,
     Name: String,
     Content: [String]
@@ -10,6 +10,6 @@ let ChapterSchema = new Schema({
 }, {
     timestamps: false
 });
-let ChapterModel = mongoose.model("Chapter", ChapterSchema);
+let LuanNguModel = mongoose.model("Chapter", LuanNguSchema);
 
-module.exports = ChapterModel;
+module.exports = LuanNguModel;
