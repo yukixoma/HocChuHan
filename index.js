@@ -35,7 +35,7 @@ app.get("/LuanNgu/count", (req, res) => {
 app.get("/database/:name", (req, res) => {
     TuThuNguKinh.find({name: req.params.name},(err,data)=>{
         if(err) console.log(err);
-        if(data) res.send(data);
+        if(data) res.send(JSON.stringify(data[0]));
     })
 });
 
